@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Collapsed Sidebar Layout</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="AdminLTE.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="Ionicons/css/ionicons.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <!-- <link rel="stylesheet" href="skin-blue.css"> -->
+  <link rel="stylesheet" href="skins/_all-skins.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="profileEdit.css">
+  <link rel="stylesheet" href="follow.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
+
+<body class="hold-transition skin-blue fixed sidebar-mini-expand-feature sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>A</b>LT</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Admin</b>LTE</span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-expand navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="sidebar-toggle_" href="index.html">
+          <i class="fa fa-home"> </i>
+          <span class="hidden-xs">Home</span>
+        </a>
+        <a class="sidebar-toggle_" href="#">
+          <i class="fa fa-pencil"></i>
+          <span class="hidden-xs">Post</span>
+        </a>
+        <a class="sidebar-toggle_" href="jobs.html">
+          <i class="fa fa-star"> </i>
+          <span class="hidden-xs">Jobs</span>
+        </a>
+        <a class="sidebar-toggle_" href="network.html">
+          <i class="fa fa-users"> </i>
+          <span class="hidden-xs">Network</span>
+        </a>
+
+        <div class="navbar-custom-menu ml-auto">
+          <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less-->
+            <li class="dropdown messages-menu">
+              <a href="#" data-toggle="dropdown">
+                <i class="fa fa-envelope-o"></i>
+                <span class="badge badge-success">4</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 4 messages</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="user2-160x160.jpg" class="rounded-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          Support Team
+                          <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">See All Messages</a></li>
+              </ul>
+            </li>
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="badge badge-warning">10</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 10 notifications</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">View all</a></li>
+              </ul>
+            </li>
+            <!-- Tasks: style can be found in dropdown.less -->
+            <li class="dropdown tasks-menu">
+              <a href="#" data-toggle="dropdown">
+                <i class="fa fa-flag-o"></i>
+                <span class="badge badge-danger">9</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 9 tasks</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                          Design some buttons
+                          <small class="pull-right">20%</small>
+                        </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">20% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                  </ul>
+                </li>
+                <li class="footer">
+                  <a href="#">View all tasks</a>
+                </li>
+              </ul>
+            </li>
+            <li class="hidden-xs">
+              <form action="#" method="get" class="sidebar-form" style="margin-top: 5px;">
+                <div class="input-group input-group-sm">
+                  <input type="text" name="q" class="form-control formnnavbar" placeholder="Search...">
+                  <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat formnnavbar"><i
+                        class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </li>
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" data-toggle="dropdown">
+                <img src="user2-160x160.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">Alexander Pierce</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header" style="background: url('http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/702caus.jpg') center center;
+              background-size: cover; overflow: hidden; width: 100%;">
+                  <img src="user2-160x160.jpg" class="rounded-circle" alt="User Image">
+
+                  <p>
+                    Alexander Pierce - Web Developer
+                    <small>Member since Nov. 2012</small>
+                  </p>
+                </li>
+                <!-- Menu Body -->
+                <li class="user-body">
+                  <div class="row">
+                    <div class="col-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </div>
+                  <!-- /.row -->
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- Control Sidebar Toggle Button -->
+            <li class="hidden-xs">
+              <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =============================================== -->
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="user2-160x160.jpg" class="rounded-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Alexander Pierce</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control formnsider" placeholder="Search...">
+            <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat formnsider"><i
+                  class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <!-- <li class="header">MAIN NAVIGATION</li> -->
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="dashboard.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+              <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-hashtag"></i> <span>Hashtag</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                <!-- <small class="label pull-right bg-green">new</small> -->
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="hashtag.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-user"></i> <span>Profile</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                <!-- <small class="label pull-right bg-green">new</small> -->
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="profile.html"><i class="fa fa-circle-o text-yellow"></i>Your Profile</a></li>
+              <li><a href="profileEdit.html"><i class="fa fa-circle-o text-yellow"></i> Profile Edit</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-users"></i> <span>Network</span>
+              <span class="pull-right-container" style="margin-right: 10px;">
+                <small class="label pull-right"><i class="fa fa-search"></i></small>
+              </span>
+            </a>
+          </li>
+          <!-- <li class="treeview active"> -->
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-files-o"></i>
+              <span>Options</span>
+              <span class="pull-right-container">
+                <span class="badge badge-primary pull-right">13</span>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="top-nav.html"><i class="fa fa-circle-o text-yellow"></i> Job</a></li>
+              <li><a href="fixed.html"><i class="fa fa-circle-o text-aqua"></i>Professional</a></li>
+              <li><a href="boxed.html"><i class="fa fa-shopping-basket "></i>Marketplace</a></li>
+              <li><a href="boxed.html"><i class="fa fa-money "></i> gushoraStartUp</a></li>
+              <li><a href="fixed.html"><i class="fa fa-circle-o text-red"></i>Events</a></li>
+              <li><a href="fixed.html"><i class="fa fa-heartbeat"></i>Fundraising</a></li>
+              <li><a href="fixed.html"><i class="fa fa-microphone"></i>Entertainment</a></li>
+              <li><a href="fixed.html"><i class="fa fa-cutlery"></i>Foodzana</a></li>
+              <li><a href="fixed.html"><i class="fa fa-film"></i>Movies</a></li>
+              <li><a href="fixed.html"><i class="fa fa-circle-o"></i>Sport</a></li>
+              <li><a href="fixed.html"><i class="fa fa-shopping-basket"></i>Cyamunara</a></li>
+              <li><a href="fixed.html"><i class="fa fa-home"></i>House</a></li>
+              <li><a href="fixed.html"><i class="fa fa-car"></i>Car</a></li>
+              <li><a href="fixed.html"><i class="fa fa-building"></i>School</a></li>
+          </li>
+        </ul>
+        </li>
+        <li>
+          <a href="setting.html">
+            <i class="fa fa-gear"></i> <span>Setting</span>
+            <span class="pull-right-container" style="margin-right: 10px;">
+              <small class="label pull-right"><i class="fa fa-files-o"></i></small>
+            </span>
+          </a>
+        </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- =============================================== -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content-header">
+        <div class="row mb-2">
+          <div class="col-3">
+            <h3>Jobs</h3>
+          </div>
+          <div class="col-9">
+            <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="http://localhost:80/Blog_nyarwanda_CMS/home.php">Home</a></li>
+                <li class="breadcrumb-item"><span id="messagePopup" class="more" data-user="61"><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> Message </a></span></li>
+                <li class="breadcrumb-item active"><i><a href="javascript:void(0);" class="price-jobs" data-pricejob="1"> Post a jobs</a></i></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+
+          <div class="col-md-3 mb-3">
+            <!-- Profile Image -->
+            <div class="info-box mb-3">
+              <div class="info-inner message-color">
+                <div class="info-in-head">
+                  <!-- PROFILE-COVER-IMAGE -->
+                  <img src="http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/702caus.jpg"
+                    alt="User Image">
+                </div>
+                <!-- info in head end -->
+                <div class="info-in-body">
+                  <div class="in-b-box">
+                    <div class="in-b-img">
+                      <!-- PROFILE-IMAGE -->
+                      <img src="http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/112baby3.png"
+                        alt="User Image">
+                    </div>
+                  </div><!--  in b box end-->
+                  <div class="info-body-name">
+                    <div class="in-b-name">
+                      <div><a href="http://localhost:80/Blog_nyarwanda_CMS/fayzo">faysal shema</a></div>
+                      <!-- Nina Mcintire -->
+                      <span><small><a href="http://localhost:80/Blog_nyarwanda_CMS/fayzo">engineering</a></small></span>
+                    </div><!-- in b name end-->
+                  </div><!-- info body name end-->
+                </div><!-- info in body end-->
+                <div class="info-in-footer">
+                  <div class="number-wrapper">
+                    <div class="num-box">
+                      <div class="num-head">
+                        <a href="http://localhost:80/Blog_nyarwanda_CMS/fayzo.posts"> POSTS</a>
+                      </div>
+                      <div class="num-body">
+                        40 </div>
+                    </div>
+                    <div class="num-box">
+                      <div class="num-head">
+                        <a href="http://localhost:80/Blog_nyarwanda_CMS/fayzo.following"> FOLLOWING</a>
+                      </div>
+                      <div class="num-body">
+                        <span class="count-following">7</span>
+                      </div>
+                    </div>
+                    <div class="num-box">
+                      <div class="num-head">
+                        <a href="http://localhost:80/Blog_nyarwanda_CMS/fayzo.followers">FOLLOWERS</a>
+                      </div>
+                      <div class="num-body">
+                        <span class="count-followers">9</span>
+                      </div>
+                    </div>
+                  </div><!-- mumber wrapper-->
+                </div><!-- info in footer -->
+              </div><!-- info inner end -->
+            </div><!-- info box -->
+
+            <div class="card card-primary mb-3">
+              <div class="card-header main-active p-1">
+                <h5 class="card-title text-center"><i> HashTags</i></h5>
+              </div>
+              <div class="card-body text-center message-color">
+                <!-- /.card-header -->
+                <strong><a href="http://localhost:80/Blog_nyarwanda_CMS/amakuru.hashtag">#amakuru</a></strong>
+
+                <p class="text-muted">
+                  4 Posts </p>
+
+                <!-- <hr> -->
+                <!-- /.card-header -->
+                <strong><a href="http://localhost:80/Blog_nyarwanda_CMS/bite.hashtag">#bite</a></strong>
+
+                <p class="text-muted">
+                  4 Posts </p>
+
+                <!-- <hr> -->
+              </div> <!-- /.card-body -->
+            </div>
+
+            <div class="sticky-top" style="top: 52px;z-index:1000;">
+              <div class="card card-primary mb-3 ">
+                <div class="card-header main-active p-1">
+                  <h5 class="card-title text-center"><i> Jobs</i></h5>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body message-color pt-0 pb-0">
+                  <div class="row">
+
+                    <div class="col-12 px-0 border-bottom jobHovers mt-2 more" data-job="34" data-business="61">
+                      <div class="user-block mb-2 jobHover">
+                        <div class="user-jobImgBorder">
+                          <div class="user-jobImg">
+                            <img
+                              src="http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/112baby3.png"
+                              alt="User Image">
+                          </div>
+                        </div>
+                        <span class="username">
+                          <!-- Job Title:  -->
+                          <a style="padding-right:3px;" href="#">Clinical Data Analyst</a>
+                        </span>
+                        <span class="description">publish - Sep 12, 2019</span>
+                        <span class="description">Deadline - 2019-09-12</span>
+                      </div>
+                    </div>
+                    <hr>
+
+                  </div>
+                </div> <!-- /.card-body -->
+                <div class="card-footer text-center">
+                  <a href="http://localhost:80/Blog_nyarwanda_CMS/jobs0.php">View all Jobs</a>
+                </div> <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="row">
+
+              <div class="col-md-12 mb-4" id="jobs-hides">
+                <!-- jobs -->
+                <div class="card card-primary mb-1 ">
+                  <div class="card-header main-active p-1">
+                    <h5 class="card-title float-left pl-2"><i> Jobs to Search</i></h5>
+                    <form class="form-inline float-right">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"
+                              aria-hidden="true"></i> </span>
+                        </div>
+                        <input type="text" class="form-control search0" aria-describedby="helpId"
+                          placeholder="Search Accountant, finance ,enginneer">
+                      </div>
+                    </form>
+
+                    <div class="nav-scroller py-0" style="clear:right;height:2rem;">
+                      <nav class="nav d-flex justify-content-between pb-0">
+                        <a class="p-2" href="javascript:void(0)" onclick="jobsCategories('Featured',1);">Featured<span
+                            class="badge badge-primary">4</span></a>
+                        <a class="p-2" href="javascript:void(0)" onclick="jobsCategories('Tenders',1);">Tenders<span
+                            class="badge badge-primary">1</span></a>
+                        <a class="p-2" href="javascript:void(0)"
+                          onclick="jobsCategories('Consultancy',1);">Consultancy<span
+                            class="badge badge-primary">2</span></a>
+                        <a class="p-2" href="javascript:void(0)"
+                          onclick="jobsCategories('Internships',1);">Internships<span
+                            class="badge badge-primary">1</span></a>
+                        <a class="p-2" href="javascript:void(0)" onclick="jobsCategories('Public',1);">Public<span
+                            class="badge badge-primary">0</span></a>
+                        <a class="p-2" href="javascript:void(0)" onclick="jobsCategories('Training',1);">Training<span
+                            class="badge badge-primary">0</span></a>
+                      </nav>
+                    </div> <!-- nav-scroller -->
+                  </div> <!-- /.card-header -->
+
+                  <div class="card-body message-color">
+                    <span class="job-show"></span>
+                    <div class="job-hide">
+
+                      <div class="col-12 px-0 py-2 jobHover jobHovers more" data-job="33" data-business="61">
+                        <div class="user-block mb-2">
+                          <div class="row">
+                            <div class="col-3 col-md-2">
+                              <div class="user-jobImgall">
+                                <img
+                                  src="http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/112baby3.png"
+                                  alt="User Image">
+                              </div>
+                            </div>
+                            <div class="col-9 col-md-10 pl-4">
+                              <span>Job Title: Data Analyst</span><br>
+                              <span>rwanda</span> ||
+                              <i class="flag-icon flag-icon-br h4 mb-0" id="br" title="us"></i><br>
+                              <span>Shared public - Sep 12, 2019</span><br>
+                              <span>Deadline - 2019-09-12</span>
+                            </div> <!-- col-10 -->
+                          </div> <!-- row -->
+                        </div> <!-- user-block -->
+                      </div> <!-- col-12 -->
+                      <hr class="bg-info mt-0 mb-1" style="width:95%;">
+
+                      <div class="col-12 px-0 py-2 jobHover jobHovers more" data-job="31" data-business="61">
+                        <div class="user-block mb-2">
+                          <div class="row">
+                            <div class="col-3 col-md-2">
+                              <div class="user-jobImgall">
+                                <img
+                                  src="http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/112baby3.png"
+                                  alt="User Image">
+                              </div>
+                            </div>
+                            <div class="col-9 col-md-10 pl-4">
+                              <span>Job Title: finance</span><br>
+                              <span>rwanda</span> ||
+                              <i class="flag-icon flag-icon-br h4 mb-0" id="br" title="us"></i><br>
+                              <span>Shared public - Sep 9, 2019</span><br>
+                              <span>Deadline - 2019-09-09</span>
+                            </div> <!-- col-10 -->
+                          </div> <!-- row -->
+                        </div> <!-- user-block -->
+                      </div> <!-- col-12 -->
+                      <hr class="bg-info mt-0 mb-1" style="width:95%;">
+
+                      <div class="col-12 px-0 py-2 jobHover jobHovers more" data-job="34" data-business="61">
+                        <div class="user-block mb-2">
+                          <div class="row">
+                            <div class="col-3 col-md-2">
+                              <div class="user-jobImgall">
+                                <img
+                                  src="http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/112baby3.png"
+                                  alt="User Image">
+                              </div>
+                            </div>
+                            <div class="col-9 col-md-10 pl-4">
+                              <span>Job Title: Clinical Data Analyst</span><br>
+                              <span>rwanda</span> ||
+                              <i class="flag-icon flag-icon-br h4 mb-0" id="br" title="us"></i><br>
+                              <span>Shared public - Sep 12, 2019</span><br>
+                              <span>Deadline - 2019-09-12</span>
+                            </div> <!-- col-10 -->
+                          </div> <!-- row -->
+                        </div> <!-- user-block -->
+                      </div> <!-- col-12 -->
+                      <hr class="bg-info mt-0 mb-1" style="width:95%;">
+
+                      <div class="col-12 px-0 py-2 jobHover jobHovers more" data-job="32" data-business="61">
+                        <div class="user-block mb-2">
+                          <div class="row">
+                            <div class="col-3 col-md-2">
+                              <div class="user-jobImgall">
+                                <img
+                                  src="http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/112baby3.png"
+                                  alt="User Image">
+                              </div>
+                            </div>
+                            <div class="col-9 col-md-10 pl-4">
+                              <span>Job Title: finance</span><br>
+                              <span>rwanda</span> ||
+                              <i class="flag-icon flag-icon-br h4 mb-0" id="br" title="us"></i><br>
+                              <span>Shared public - Sep 9, 2019</span><br>
+                              <span>Deadline - 2019-09-09</span>
+                            </div> <!-- col-10 -->
+                          </div> <!-- row -->
+                        </div> <!-- user-block -->
+                      </div> <!-- col-12 -->
+                      <hr class="bg-info mt-0 mb-1" style="width:95%;">
+                    </div>
+                  </div> <!-- /.card-body -->
+                </div> <!-- /.card -->
+
+
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
+            </div>
+              <!-- /.row -->
+          </div>
+              <!-- /.col -->
+
+          <div class="col-md-3">
+            <div class="card mb-3">
+              <div class="card-header main-active text-center">
+                <i> WHO TO FOLLOW </i>
+              </div>
+              <div class="card-body message-color pt-0 pb-0">
+                <div class="row">
+                  <div class="col-12 px-0 border-bottom jobHovers mt-2 more" data-job="33" data-business="61">
+                    <div class="user-block mb-2 jobHover">
+                      <div class="user-jobImgBorder">
+                        <div class="user-jobImg">
+                          <img
+                            src="http://localhost:80/Blog_nyarwanda_CMS/assets/image/users_profile_cover/112baby3.png"
+                            alt="User Image">
+                        </div>
+                      </div>
+                      <span class="username">
+                        <!-- Job Title:  -->
+                        <a href="http://localhost:80/Blog_nyarwanda_CMS/shema" id="80">shema shema</a>
+                      </span>
+                      <div class="my-0 ml-2"><small style="font-size: 12px;">no career</small>
+                      </div>
+
+                      <div class="my-0 ml-2">
+                        <button type="button" class="btn btn-secondary btn-sm follow-btn" data-follow="80"
+                          data-profile="61"><span class="fa fa-user-plus"></span> Follow</button>
+                      </div>
+                    </div>
+                  </div><!-- END OF EACH WHOTOFOLLOW -->
+                </div><!-- ROW -->
+              </div><!-- CARD-BODY -->
+              <div class="card-footer text-center">
+                <a href="http://localhost:80/Blog_nyarwanda_CMS/network.php">View more &gt;&gt;&gt;</a>
+              </div>
+            </div> <!-- CARD -->
+
+            <div class="sticky-top " style="top: 52px;z-index:1000;">
+              <div class="card text-center">
+                <div class="card-header main-active p-1">
+                  <h5 class="card-title"><i> Options</i></h5>
+                </div>
+                <div class="card-body options-list message-color">
+                  <ul>
+                    <li>
+                      <h5 class="card-title"><a href="crowfund.php">GushoraStartUp</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="fundraising.php"> Fundraising</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="Unemployment.php"> Unemployment</a></h5>
+                    </li>
+                    <li>
+                      <h5><a href="career_profession.php">Professional</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="sale.php">Sale</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="gurisha.php">Gurisha</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="blog.php">Blog</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="jobs0.php">Jobs</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="events.php">Events</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="movies.php">Movies</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="sports.php">Sports</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="news.php">news</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="entertainment.php">Entertainment</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="rwandaPhotos.php">Rwanda-Landscape</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="Tembera.php">Tembera-ltd</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="hotelbooking.php">Hotel-booking</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="motel.php">motel</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="house.php">House</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="car.php">Car</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="icyamunara.php">Cyamunara</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="food.php">Foodzana</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="domestic.php">domestic Helpers</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="school.php">school</a></h5>
+                    </li>
+                    <li>
+                      <h5 class="card-title"><a href="members_earning.php">members earning</a></h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col- -->
+        </div>
+        <!-- row- -->
+
+      </section>
+      <!-- /.content -->
+
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 2.4.18
+      </div>
+      <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
+      reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Create the tabs -->
+      <!-- <ul class="nav nav-tabs nav-justified control-sidebar-tabs"> -->
+      <ul class="nav nav-tabs nav-justified ">
+        <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content control-sidebar-home">
+        <!-- Home tab content -->
+        <div class="tab-pane" id="control-sidebar-home-tab">
+          <h3 class="control-sidebar-heading">Recent Activity</h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                <div class="menu-info">
+                  <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                  <p>Will be 23 on April 24th</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-user bg-yellow"></i>
+
+                <div class="menu-info">
+                  <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                  <p>New phone +1(800)555-1234</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+                <div class="menu-info">
+                  <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                  <p>nora@example.com</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+                <div class="menu-info">
+                  <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                  <p>Execution time 5 seconds</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /.control-sidebar-menu -->
+
+          <h3 class="control-sidebar-heading">Tasks Progress</h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                  Custom Template Design
+                  <span class="badge badge-danger pull-right">70%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                  Update Resume
+                  <span class="badge badge-success pull-right">95%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                  Laravel Integration
+                  <span class="badge badge-warning pull-right">50%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                  Back End Framework
+                  <span class="badge badge-primary pull-right">68%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /.control-sidebar-menu -->
+
+        </div>
+        <!-- /.tab-pane -->
+        <!-- Stats tab content -->
+        <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+        <!-- /.tab-pane -->
+        <!-- Settings tab content -->
+        <div class="tab-pane" id="control-sidebar-settings-tab">
+          <form method="post">
+            <h3 class="control-sidebar-heading">General Settings</h3>
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Report panel usage
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+
+              <p>
+                Some information about this general settings option
+              </p>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Allow mail redirect
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+
+              <p>
+                Other sets of options are available
+              </p>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Expose author name in posts
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+
+              <p>
+                Allow the user to show his name in blog posts
+              </p>
+            </div>
+            <!-- /.form-group -->
+
+            <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Show me as online
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Turn off notifications
+                <input type="checkbox" class="pull-right">
+              </label>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Delete chat history
+                <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+              </label>
+            </div>
+            <!-- /.form-group -->
+          </form>
+        </div>
+        <!-- /.tab-pane -->
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 3 -->
+  <script src="jquery.min.js"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="popper.min.copy4.1.js"></script>
+
+  <script src="bootstrap.min.copy4.1.js"></script>
+  <!-- SlimScroll -->
+  <script src="jquery.slimscroll.min.js"></script>
+  <!-- FastClick -->
+  <script src="fastclick.js"></script>
+  <!-- AdminLTE App -->
+  <script src="adminlte.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="demo.js"></script>
+</body>
+
+</html>
